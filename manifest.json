@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+
+  "name": "MonitorMarket",
+  "version": "2.0.0",
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.wildberries.ru/*", "https://seller.wildberries.ru/*"],
+      "js": [
+        "real-advert-cpm-display/js/script.js",
+        "dist/bundle.js"
+      ],
+      "css": [
+        "real-advert-cpm-display/css/main.css",
+        "auto-rate-setting-vue/src/assets/styles/common-styles.css"
+      ]
+    }
+  ],
+
+  "icons": {
+    "48": "img/logo48.png",
+    "96": "img/logo96.png"
+  },
+
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+
+  "web_accessible_resources": [{
+    "resources": [
+      "img/logo96.png",
+      "img/logo48.png",
+      "auto-rate-setting-vue/src/assets/img/decr.png",
+      "auto-rate-setting-vue/src/assets/img/incr.png"
+    ],
+    "matches": [
+      "https://www.wildberries.ru/*",
+      "https://seller.wildberries.ru/*"
+    ]
+  }],
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}

@@ -1,0 +1,83 @@
+h1 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 90px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    color: #043141;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+.popup-container {
+    display: flex;
+    flex-flow: column;
+    border-radius: 10%;
+    width: 800px;
+    height: 40%;
+}
+
+.popup-container div {
+    display: flex;
+    margin: 4px 0 0 0;
+}
+
+.popup-container div span {
+    color: #043141;
+}
+
+.popup-container div span {
+    display: flex;
+    align-items: center;
+    margin: 0 4px 0 0;
+}
+
+.popup-container__input {
+    width: 70%;
+    height: 20px;
+    margin: 0 10px 0 0;
+    border: 1px solid #043141;
+    border-radius: 5px;
+    color: #043141;
+}
+
+.popup-container__save-btn {
+    color: #eee;
+    background: #2AA3E3;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-container__save-btn:hover {
+    background: #F69D30;
+}
+
+.popup-container__save-btn:active {
+    background: #F65D00;
+}
+
+.popup-container__link {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.confirmation-failure {
+    color: red;
+}
+
+.confirmed {
+    color: #00d200;
+}

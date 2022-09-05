@@ -1,0 +1,39 @@
+.monitor-market-info-list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    margin: 0 0 10px 0;
+}
+
+.monitor-market-info-list__page {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.monitor-market-info-list__item {
+    align-items: center;
+    width: 20%;
+    border: 1px solid #aaa;
+    border-radius: 5%;
+    margin: 4px;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+/*.info-list__item span {*/
+/*    font-size: 12px;*/
+/*}*/
+
+.monitor-market-warning img{
+    width: 15px;
+    height: 15px;
+    /*background: #f7f7fa;*/
+    background: #3a0078;
+}
+
+
+
+
+
+

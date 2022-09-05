@@ -1,0 +1,17 @@
+.column {
+    flex-grow: 1;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 12px;
+}
+
+.common-row {
+    height: 60px;
+    margin-bottom: 10px;
+    background: #F4F4F8;
+}
